@@ -321,7 +321,7 @@ a:focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .slider_section .row {

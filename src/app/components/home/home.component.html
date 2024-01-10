@@ -6,47 +6,10 @@
 <!--    </div>-->
 <!--  </div>-->
 
-  <header class="header_section" style="background: #0c0c0c">
-    <div class="header_bottom">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-              <span>
-                JM EState Group
-              </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""></span>
-          </button>
-
-          <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html"> Services </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="http://localhost:1000/">T2 INTERACTIVE INTERNATIONAL SDN BHD</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/partners">
-                  International Partners
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
+  <app-header [currentPage]="'home'"></app-header>
   <!-- end header section -->
   <!-- slider section -->
-  <section class=" slider_section" style="background: #0c0c0c">
+  <section class=" slider_section first-session">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -57,16 +20,15 @@
                   <h1>
                     Welcome To <br>
                     <span>
-                        JM ESTATE GROUP
+                        JS GROUP
                       </span>
                   </h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod magna aliqua. Ut enim ad minim veniam
+                    JS GROUP are the pioneers to introduce affordable condominium project in Phnom Penh mainly focusing in Sen Sok district - a growing and modernising district in the northwest of Phnom Penh’s city centre.
                   </p>
                   <div class="btn-box">
                     <a href="" class="btn-1"> Read more </a>
-                    <a href="" class="btn-2">Get A Quote</a>
+<!--                    <a href="" class="btn-2">Get A Quote</a>-->
                   </div>
                 </div>
               </div>
@@ -142,7 +104,7 @@
       <div class="col-md-6 px-0">
         <div class="img_container">
           <div class="img-box">
-            <img src="./assets/images/about-img.jpg" alt="" />
+            <img src="./assets/images/logo.png" alt="" />
           </div>
         </div>
       </div>

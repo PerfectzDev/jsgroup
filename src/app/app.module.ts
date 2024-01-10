@@ -13,14 +13,20 @@ import {NzDropDownModule} from "ng-zorro-antd/dropdown";
 import {HomeComponent} from "./components/home/home.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {PartnersComponent} from "./components/partners/partners.component";
+import {AboutUsComponent} from "./components/about-us/about-us.component";
+import {HeaderComponent} from "./components/header/header.component";
+import {ContactUsComponent} from "./components/contact-us/contact-us.component";
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     HomeComponent,
-    PartnersComponent
+    PartnersComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

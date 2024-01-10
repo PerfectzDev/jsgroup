@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./partners.component.css']
 })
 export class PartnersComponent {
-  title = 'jmestategroup';
+  title = 'jsgroupgroup';
 }
