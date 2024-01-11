@@ -16,6 +16,7 @@ import {PartnersComponent} from "./components/partners/partners.component";
 import {AboutUsComponent} from "./components/about-us/about-us.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {ContactUsComponent} from "./components/contact-us/contact-us.component";
+import {FooterComponent} from "./components/footer/footer.component";
 
 registerLocaleData(en);
 
@@ -23,6 +24,7 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     HeaderComponent,
+    FooterComponent,
     HomeComponent,
     PartnersComponent,
     AboutUsComponent,
