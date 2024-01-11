@@ -12,11 +12,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NzDropDownModule} from "ng-zorro-antd/dropdown";
 import {HomeComponent} from "./components/home/home.component";
 import {AppRoutingModule} from "./app-routing.module";
-import {PartnersComponent} from "./components/partners/partners.component";
+import {CambodiaBusinessComponent} from "./components/cambodia-business/cambodia-business.component";
 import {AboutUsComponent} from "./components/about-us/about-us.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {ContactUsComponent} from "./components/contact-us/contact-us.component";
 import {FooterComponent} from "./components/footer/footer.component";
+import {MalaysiaBusinessComponent} from "./components/malaysia-business/malaysia-business.component";
 
 registerLocaleData(en);
 
@@ -26,7 +27,8 @@ registerLocaleData(en);
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    PartnersComponent,
+    CambodiaBusinessComponent,
+    MalaysiaBusinessComponent,
     AboutUsComponent,
     ContactUsComponent
   ],
