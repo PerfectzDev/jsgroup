@@ -36,11 +36,11 @@
                 </ul>
               </nz-dropdown-menu>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""> Investor Relation </a>
+            <li [ngClass]="currentPage=='investor-relation' ? 'nav-item active' : 'nav-item'">
+              <a class="nav-link" href="/investor-relation"> Investor Relation </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""> Media </a>
+            <li [ngClass]="currentPage=='media' ? 'nav-item active' : 'nav-item'">
+              <a class="nav-link" href="/media"> Media </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact-us"> Contact Us </a>

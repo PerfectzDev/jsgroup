@@ -18,6 +18,8 @@ import {HeaderComponent} from "./components/header/header.component";
 import {ContactUsComponent} from "./components/contact-us/contact-us.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {MalaysiaBusinessComponent} from "./components/malaysia-business/malaysia-business.component";
+import {InvestorRelationComponent} from "./components/investor-relation/investor-relation.component";
+import {MediaComponent} from "./components/media/media.component";
 
 registerLocaleData(en);
 
@@ -30,7 +32,9 @@ registerLocaleData(en);
     CambodiaBusinessComponent,
     MalaysiaBusinessComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    InvestorRelationComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
