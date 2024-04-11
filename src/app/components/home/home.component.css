@@ -1,4 +1,29 @@
 .first-session{
   background-image: url("src/assets/images/cover.jpg");
   background-repeat: no-repeat;
-  background-size: cover;}
+  background-size: cover;
+  }
+ .curved-section {
+    position: relative;
+    overflow: hidden;
+    background-color: #1c1c1c; /* Set the background color to black */
+    color: white; /* Set text color to contrast with the black background */
+  }
+  .curved-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .curved-text {
+    position: absolute;
+    bottom: 20px; /* Adjust the text position */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Adjust the text size */
+    z-index: 2; /* Ensure the text is on top of the smiley face */
+  }
+
+    .img-box img {
+      height: 200px; /* Set the desired height for all images */
+      object-fit: cover; /* Ensure images maintain their aspect ratio */
+    }

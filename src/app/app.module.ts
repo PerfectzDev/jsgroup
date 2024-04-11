@@ -11,6 +11,10 @@ import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NzDropDownModule} from "ng-zorro-antd/dropdown";
 import {HomeComponent} from "./components/home/home.component";
+import {CardFlipComponent} from "./shared/card-flip/card-flip.component";
+import {TitleAnimationComponent} from "./shared/title-animation/title-animation.component";
+import {TimelineComponent} from "./shared/timeline/timeline.component";
+import {LatestNewsComponent} from "./shared/latest-news/latest-news.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {CambodiaBusinessComponent} from "./components/cambodia-business/cambodia-business.component";
 import {AboutUsComponent} from "./components/about-us/about-us.component";
@@ -20,6 +24,9 @@ import {FooterComponent} from "./components/footer/footer.component";
 import {MalaysiaBusinessComponent} from "./components/malaysia-business/malaysia-business.component";
 import {InvestorRelationComponent} from "./components/investor-relation/investor-relation.component";
 import {MediaComponent} from "./components/media/media.component";
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 registerLocaleData(en);
 
@@ -34,7 +41,11 @@ registerLocaleData(en);
     AboutUsComponent,
     ContactUsComponent,
     InvestorRelationComponent,
-    MediaComponent
+    MediaComponent,
+    CardFlipComponent,
+    TimelineComponent,
+    LatestNewsComponent,
+    TitleAnimationComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +53,10 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NzDropDownModule
+    NzDropDownModule,
+    NzCarouselModule,
+    NzCardModule,
+    NzButtonModule
   ],
   providers: [
     {provide: NZ_I18N, useValue: en_US}

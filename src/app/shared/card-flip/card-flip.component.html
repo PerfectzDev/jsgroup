@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card box front">
+    <div class="">
+      <div class="detail-box">
+        <h6>
+          {{business.title}}
+        </h6>
+        <a href="">
+          Read More
+        </a>
+      </div>
+    </div>
+    <div class="back">
+      <div nz-row *ngFor="let path of business.listOfBusinessLogoPath">
+        <div nz-col nzSpan="6">
+          <img [src]="path" width="200px" height="180px">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

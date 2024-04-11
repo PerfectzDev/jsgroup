@@ -1,0 +1,8 @@
+<nz-card *ngFor="let image of images">
+  <h3>
+    {{image.description}}
+  </h3>
+  <button nz-button nzType="primary" class="btn-box">
+    <a [href]="image.imageUrl">Go</a>
+  </button>
+</nz-card>
