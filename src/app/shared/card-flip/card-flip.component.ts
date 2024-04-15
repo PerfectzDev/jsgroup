@@ -9,6 +9,6 @@ import {BusinessModel}from '../../models/business.model';
 
 export class CardFlipComponent {
 
-  @Input() business: BusinessModel = {title: '', listOfBusinessLogoPath: []};
+  @Input() business: BusinessModel = {title: '', imageLink: '',listOfBusinessLogoPath: []};
 
 }

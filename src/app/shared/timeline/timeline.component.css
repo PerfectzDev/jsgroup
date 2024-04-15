@@ -44,7 +44,7 @@ body{
 	position:absolute;
 	width:12px;
 	height:12px;
-	background-color:#8b7434;
+	background-color:#ad9c66;
 	border-radius:50%;
 	left:-6px;
 	top:12px;
@@ -55,14 +55,14 @@ body{
 	position:absolute;
 	width:12px;
 	height:12px;
-	background-color:#8b7434;
+	background-color:#ad9c66;
 	border-radius:50%;
 	right:-6px;
 	top:12px;
 	transition:.5s;
 }
 .timeline ul li:hover:before{
-	box-shadow:0px 0px 5px 2px #8b7434;
+	box-shadow:0px 0px 5px 2px #ad9c66;
 }
 .timeline ul li:nth-child(even){
 	float:right;
@@ -78,7 +78,7 @@ body{
 	position:absolute;
 	right:-38%;
 	top: 3px;
-	background-color:#8b7434;
+	background-color:#ad9c66;
 	color:#fff;
 	text-align:left;
 	padding-left:10px;
@@ -86,13 +86,13 @@ body{
 	height:28px;
 	line-height:28px;
 	border-radius:20px;
-	box-shadow:0px 0px 0px 3px rgba(15,185,177,.3);
+	box-shadow:0px 0px 0px 3px rgba(173, 156, 102,.3);
 }
 .timeline ul li:nth-child(even) .time{
 	position:absolute;
 	left:-38%;
 	top: 3px;
-	background-color:#8b7434;
+	background-color:#ad9c66;
 	color:#fff;
 	text-align:right;
 	padding-right:10px;
@@ -100,7 +100,7 @@ body{
 	height:28px;
 	line-height:28px;
 	border-radius:20px;
-	box-shadow:0px 0px 0px 3px rgba(15,185,177,.3);
+	box-shadow:0px 0px 0px 3px rgba(173, 156, 102,.3);
 }
 .timeline ul li .content h3{
 	color:#218c74;

@@ -27,3 +27,141 @@
       height: 200px; /* Set the desired height for all images */
       object-fit: cover; /* Ensure images maintain their aspect ratio */
     }
+
+.transparent{
+    opacity: 0.4;
+}
+
+.rounded{
+  border-radius: 50px;
+}
+
+
+.bg0-section {
+    position: relative;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg0-section::before {
+      content: "";
+      background-image: url('https://wallpaperboat.com/wp-content/uploads/2020/10/23/57974/real-estate-03.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+}
+
+.bg1-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg1-section::before {
+      content: "";
+      background-image: url('src/assets/images/bg1.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+}
+
+.bg2-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg2-section::before {
+      content: "";
+      background-image: url('src/assets/images/bg3.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.25;
+}
+
+
+.bg3-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg3-section::before {
+      content: "";
+      background-image: url('src/assets/images/bg3.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1.2;
+}
+
+.bg4-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg4-section::before {
+      content: "";
+      background-image: url('src/assets/images/bg4.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.85;
+}
+
+.word-section {
+    position: relative;
+    height: 15vh;
+    display: flex;
+    align-items: top;
+    justify-content: top;
+}
+
+.about-us-content {
+font-size: 20px;
+
+}
+
+.btn-box a{
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #8b7434;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  }

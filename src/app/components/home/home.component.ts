@@ -32,11 +32,13 @@ images: ImageModel[] = [
   ];
 
   businessModels: BusinessModel[] = [
-  {title: 'PROPERTY DEVELOPMENT', listOfBusinessLogoPath: ['../../../assets/business/jsgroup.png','../../../assets/business/jsproperty.png']
+  {title: 'PROPERTY DEVELOPMENT', imageLink: 'https://ikonmalaysia.com/wp-content/uploads/2023/12/property.jpg' , listOfBusinessLogoPath: ['../../../assets/business/jsgroup.png','../../../assets/business/jsproperty.png']
   },
-  {title: 'MICROFINANCE', listOfBusinessLogoPath: ['../../../assets/business/jsventure.png']
+  {title: 'MICROFINANCE', imageLink: 'https://www.nelito.com/images/blog-images/leading-microfinance-companies-in-india.jpg' ,
+listOfBusinessLogoPath: ['../../../assets/business/jsventure.png']
   },
-  {title: 'PROPERTY MANAGEMENT', listOfBusinessLogoPath: []
+  {title: 'PROPERTY MANAGEMENT', imageLink: 'https://cdn-dclcg.nitrocdn.com/aNyVSmoYXSpfREUtzauWNnIBSBYijKrg/assets/images/optimized/rev-399453f/www.crmjetty.com/wp-content/uploads/2023/05/8_Factors_to_Consider_in_Real_Estate_Portal_Development.jpg' ,
+listOfBusinessLogoPath: []
   },
   ];
 

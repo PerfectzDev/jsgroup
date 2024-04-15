@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -23,10 +25,10 @@ body {
 }
 
 .text1 {
-  color: black;
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: 8px;
+  color: white;
+  font-size: 160px;
+  font-weight: 800;
+  letter-spacing: 15px;
   margin-bottom: 20px;
   background: transparent;
   position: relative;
@@ -35,27 +37,13 @@ body {
   animation-name: text;
   animation-duration: 8s;
   animation-iteration-count: 1;
+  opacity: 50%;
+    font-family: "Anton";
 }
 
 .text2 {
   font-size: 60px;
-  color: #1c1c1c;
+  color: white;
 }
 
-@keyframes text {
-  0% {
-    color: black;
-    margin-bottom: -40px;
-  }
-  30% {
-    letter-spacing: 25px;
-    margin-bottom: -40px;
-  }
-  85% {
-    letter-spacing: 8px;
-    margin-bottom: -40px;
-  }
-  100% {
-    margin-bottom: 20px;
-  }
-}
+

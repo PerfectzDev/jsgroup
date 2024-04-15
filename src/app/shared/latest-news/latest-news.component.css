@@ -14,3 +14,8 @@ button:hover {
   border-color: #8b7434;
   color: #8b7434;
 }
+
+.card {
+  opacity:70%;
+  border-radius: 20px;
+}

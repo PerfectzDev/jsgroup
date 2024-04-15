@@ -4,14 +4,14 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 0;
+  padding-left: 10px;
   margin-bottom: 0;
   list-style: none;
 }
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -103,7 +103,6 @@
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
 }
 
 .navbar > .container,
@@ -120,8 +119,6 @@
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -574,4 +571,9 @@
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
 }

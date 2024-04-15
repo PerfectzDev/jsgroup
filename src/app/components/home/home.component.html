@@ -2,99 +2,16 @@
   <app-header [currentPage]="'home'"></app-header>
   <!-- end slider section -->
   <section class="curved-section">
-    <img src="./assets/images/cover.jpg" alt="Image Description">
+    <nz-carousel [nzAutoPlay]="true" [nzEffect]="'fade'" class="transparent">
+      <div nz-carousel-content *ngFor="let image of images">
+        <img [src]="image.imageUrl" alt="" class="w-100 h-100 rounded">
+      </div>
+    </nz-carousel>
     <app-title-animation></app-title-animation>
   </section>
 </div>
 
-<!-- content highlight-->
-<section class="content_highlight_section layout_padding">
-  <div class="container">
-    <div class="heading_container heading_center py-5">
-      <h2 class="text-white">
-        Content Highlights
-      </h2>
-    </div>
-    <nz-carousel [nzAutoPlay]="true" [nzEffect]="'fade'">
-      <div nz-carousel-content *ngFor="let image of images">
-        <div class="row">
-          <div class="col-md-6 px-0">
-            <div class="img_container">
-              <div class="img-box">
-                <img [src]="image.imageUrl" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 px-0">
-            <div class="detail-box">
-              <div class="heading_container ">
-                <h2>
-                  {{image.description}}
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nz-carousel>
-  </div>
-</section>
-<!-- end content highlight-->
-
-<!-- about section -->
-
-
-<section class="about_section layout_padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 px-0">
-        <div class="img_container">
-          <div class="img-box">
-            <img src="./assets/images/logo.png" alt=""/>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 px-0">
-        <div class="detail-box">
-          <div class="heading_container ">
-            <h2>
-              ABOUT US
-            </h2>
-          </div>
-          <p>
-            Founded in 2014, JS GROUP has been at the forefront of the real estate development scene in Phnom Penh, specializing in the creation of condominiums that cater to diverse lifestyles while remaining affordable. Our journey began with a collective vision shared by entrepreneurs from Cambodia, Malaysia, and Hong Kong, each bringing a wealth of experience in property, hospitality, and industrial development across Cambodia and the wider region....
-
-          </p>
-          <div class="btn-box">
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- end about section -->
-
-<!-- service section -->
-
-<section class="service_section layout_padding">
-  <div class="container">
-    <div class="heading_container heading_center">
-      <h2 class="text-white">
-        Our Business
-      </h2>
-    </div>
-    <div class="row">
-      <div class="col-md-4" *ngFor="let business of businessModels">
-        <app-card-flip [business]="business"></app-card-flip>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="client_section layout_padding">
+<section class="client_section layout_padding bg0-section">
   <div class="container">
     <div class="heading_container heading_center">
       <h2 class="text-black">
@@ -105,12 +22,98 @@
   </div>
 </section>
 
-<section class="contact_section layout_padding" style="background: #0c0c0c">
-  <div class="contact_bg_box">
-    <div class="img-box">
-      <img src="./assets/images/contact-bg.jpg" alt="">
+<!--&lt;!&ndash; content highlight&ndash;&gt;-->
+<!--<section class="content_highlight_section layout_padding">-->
+<!--  <div class="container">-->
+<!--    <div class="heading_container heading_center py-5">-->
+<!--      <h2 class="text-white">-->
+<!--        Content Highlights-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--    <nz-carousel [nzAutoPlay]="true" [nzEffect]="'fade'">-->
+<!--      <div nz-carousel-content *ngFor="let image of images">-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-6 px-0">-->
+<!--            <div class="img_container">-->
+<!--              <div class="img-box">-->
+<!--                <img [src]="image.imageUrl" alt="">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-6 px-0">-->
+<!--            <div class="detail-box">-->
+<!--              <div class="heading_container ">-->
+<!--                <h2>-->
+<!--                  {{image.description}}-->
+<!--                </h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </nz-carousel>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; end content highlight&ndash;&gt;-->
+
+<!-- about section -->
+
+
+<section class="about_section layout_padding bg1-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 px-0 word-section">
+        <h1>ABOUT US</h1>
+      </div>
+      <div class="col-md-6 px-0">
+        <p class="about-us-content">
+          Founded in 2014, JS GROUP has been at the forefront of the real estate development scene in Phnom Penh,
+          specializing in the creation of condominiums that cater to diverse lifestyles while remaining affordable.
+          Our journey began with a collective vision shared by entrepreneurs from Cambodia, Malaysia, and Hong Kong,
+          each bringing a wealth of experience in property, hospitality, and industrial development across Cambodia
+          and the wider region....
+        </p>
+        <div class="btn-box">
+          <a href="">
+            Read More
+          </a>
+        </div>
+      </div>
+      <!--      <div class="col-md-6 px-0">-->
+      <!--        <div class="img_container">-->
+      <!--          <div class="img-box">-->
+      <!--            <img src="./assets/images/logo.png" class="w-100 h-100" alt=""/>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="col-md-6 px-0">-->
+      <!--        <div class="detail-box">-->
+      <!--          <div class="heading_container ">-->
+      <!--            <h2>-->
+      <!--              ABOUT US-->
+      <!--            </h2>-->
+      <!--          </div>-->
+      <!--          <p>-->
+      <!--            Founded in 2014, JS GROUP has been at the forefront of the real estate development scene in Phnom Penh,-->
+      <!--            specializing in the creation of condominiums that cater to diverse lifestyles while remaining affordable.-->
+      <!--            Our journey began with a collective vision shared by entrepreneurs from Cambodia, Malaysia, and Hong Kong,-->
+      <!--            each bringing a wealth of experience in property, hospitality, and industrial development across Cambodia-->
+      <!--            and the wider region....-->
+
+      <!--          </p>-->
+      <!--          <div class="btn-box">-->
+      <!--            <a href="">-->
+      <!--              Read More-->
+      <!--            </a>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </div>-->
     </div>
   </div>
+</section>
+<!-- end about section -->
+
+<section class="contact_section layout_padding bg4-section">
   <div class="container">
     <div class="heading_container heading_center">
       <h2 class="text-white">
@@ -123,7 +126,25 @@
   </div>
 </section>
 
-<section class="team_section layout_padding">
+<!-- service section -->
+
+<section class="service_section layout_padding bg3-section">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2 class="">
+        Our Business
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let business of businessModels">
+        <app-card-flip [business]="business"></app-card-flip>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="team_section layout_padding bg0-section">
   <div class="container">
     <div class="heading_container heading_center">
       <h2>

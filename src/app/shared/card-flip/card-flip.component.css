@@ -10,6 +10,7 @@ body {
   background: linear-gradient(45deg, #061de3, #e306ca);
   font-family: Helvetica, sans-serif;
   color: rgb(211, 211, 211);
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -28,11 +29,10 @@ body {
 .card {
   height: 100%;
   width: 100%;
+  position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
+    border-radius: 2rem;
 }
 
 .front,
@@ -46,10 +46,42 @@ body {
 }
 
 .front {
-
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .back {
-  background-color: white;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.detail-box {
+  padding-top: 50%;
+}
+
+
+.bg-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-section::before {
+      content: "";
+      background-image: url('src/assets/images/bg4.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.85;
 }
