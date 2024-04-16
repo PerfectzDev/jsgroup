@@ -36,11 +36,11 @@
               </nz-dropdown-menu>
             </li>
             <li [ngClass]="currentPage=='investor-relation' ? 'nav-item active' : 'nav-item'">
-              <a nz-dropdown [nzDropdownMenu]="menu" class="nav-link p-4">
+              <a nz-dropdown [nzDropdownMenu]="menu2" class="nav-link p-4">
                 Our Projects
                 <span nz-icon nzType="down"></span>
               </a>
-              <nz-dropdown-menu #menu="nzDropdownMenu">
+              <nz-dropdown-menu #menu2="nzDropdownMenu">
                 <ul nz-menu nzSelectable>
                   <li nz-menu-item routerLink="/">THE GARDEN RESIDENCY</li>
                   <li nz-menu-item routerLink="/">THE GARDEN RESIDENCY 2</li>
