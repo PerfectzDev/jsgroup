@@ -29,13 +29,24 @@
               </a>
               <nz-dropdown-menu #menu="nzDropdownMenu">
                 <ul nz-menu nzSelectable>
-                  <li nz-menu-item routerLink="/malaysia-business">Malaysia</li>
-                  <li nz-menu-item routerLink="/cambodia-business">Cambodia</li>
+                  <li nz-menu-item routerLink="/malaysia-business">Property Development</li>
+                  <li nz-menu-item routerLink="/malaysia-business">MicroFinance</li>
+                  <li nz-menu-item routerLink="/cambodia-business">Management</li>
                 </ul>
               </nz-dropdown-menu>
             </li>
             <li [ngClass]="currentPage=='investor-relation' ? 'nav-item active' : 'nav-item'">
-              <a class="nav-link p-4" href="/investor-relation"> Our Projects </a>
+              <a nz-dropdown [nzDropdownMenu]="menu" class="nav-link p-4">
+                Our Projects
+                <span nz-icon nzType="down"></span>
+              </a>
+              <nz-dropdown-menu #menu="nzDropdownMenu">
+                <ul nz-menu nzSelectable>
+                  <li nz-menu-item routerLink="/">THE GARDEN RESIDENCY</li>
+                  <li nz-menu-item routerLink="/">THE GARDEN RESIDENCY 2</li>
+                  <li nz-menu-item routerLink="/">CHIEF TOWER</li>
+                </ul>
+              </nz-dropdown-menu>
             </li>
             <li [ngClass]="currentPage=='investor-relation' ? 'nav-item active' : 'nav-item'">
               <a class="nav-link p-4" href="/investor-relation"> Latest News </a>
